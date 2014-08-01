@@ -26,6 +26,12 @@ func main() {
 	} else if (operand == "-") {
 		total = num1 - num2;
 	} else if (operand == "/") {
+		// Test for division by zero
+		if (num2 == 0) {
+			fmt.Fprintf(os.Stdout, "Error: division by zero\n");
+			os.Exit(9);
+		}
+
 		total = num1 / num2;
 	} else if (operand == "*") {
 		total = num1 * num2;
