@@ -34,5 +34,5 @@ func main() {
 		os.Exit(2);
 	}
 
-	fmt.Fprintf(os.Stdout, "%.2f %s %.2f = %.2f\n", num1, operand, num2, total);
+	fmt.Fprintf(os.Stdout, "%g %s %g = %g\n", num1, operand, num2, total);
 }
